@@ -58,7 +58,7 @@ end
 
 print("KANDY HUB  AUTOFARM ON")
 
-shared.MoneyFarm = true -- Just execute shared.MoneyFarm = false to stop farming
+shared.MoneyFarm = true 
 
 while shared.MoneyFarm do
     wait()
@@ -115,7 +115,6 @@ gm.__namecall =
         end
         return namecall(self, unpack(args))
     end
-)
 
 local LocalPlayer = game:GetService("Players").LocalPlayer
 
@@ -144,7 +143,7 @@ end
 
 print("KANDY HUB AUTOFARM OFF")
 
-shared.MoneyFarm = false -- Just execute shared.MoneyFarm = false to stop farming
+shared.MoneyFarm = false 
 
 while shared.MoneyFarm do
     wait()
@@ -182,6 +181,23 @@ while shared.MoneyFarm do
 end
     end
 end)
+
+
+
+-- Extra 
+
+
+local Extra = Window:NewTab("Extra")
+local ExtraSection = Extra:NewSection("Extra Shit")
+ExtraSection:NewButton("Anti-AFK", "ButtonInfo", function()
+    while true do wait(600)
+        game.Players.LocalPlayer.Character.Humanoid.Jump = true 
+    end
+end)
+
+
+
+
 
 -- CREDITS 
 
