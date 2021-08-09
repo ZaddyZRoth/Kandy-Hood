@@ -1,6 +1,6 @@
 if game.PlaceId == 2788229376 then
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("KANDY HUB                               DA HOOD!  ", "Ocean")
+local Window = Library.CreateLib("Rosery                               DA HOOD!  ", "Ocean")
 
 --Player
 local Player = Window:NewTab("Player")
@@ -117,48 +117,12 @@ PlayerSection:NewButton("Fly (X) ", "Press X to enable and disable the fly", fun
             start()
 end)
 
-PlayerSection:NewButton("Infinite jump", " You Don't know Infinite jump?", function()
-    local Player = game:GetService'Players'.LocalPlayer;
-	local UIS = game:GetService'UserInputService';
-		
-	_G.JumpHeight = 50
-	
-	function Action(Object, Function) if Object ~= nil then Function(Object); end end
-	
-	UIS.InputBegan:connect(function(UserInput)
-	    if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
-	        Action(Player.Character.Humanoid, function(self)
-	            if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
-	                Action(self.Parent.HumanoidRootPart, function(self)
-	                    self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
-	                end)
-	            end
-	        end)
-	    end
-	end)
-end)
-
-
-PlayerSection:NewSlider("SliderText", "SliderInfo", 100, 0, function(v) 
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
-end)
-
-
-
-
-
-
-
-
-
-
-
 
 --AutoFarm
 local Autofarm = Window:NewTab("AutoFarm")
 local AutofarmSection = Autofarm:NewSection("Toggle AutoFarm")
 
-AutofarmSection:NewToggle("", "it's literally autofarm wat do yu expect", function(state)
+AutofarmSection:NewToggle("Fist autofarm", "it's literally autofarm wat do yu expect", function(state)
     if state then
         repeat
             wait()
@@ -337,19 +301,6 @@ end)
 
 
 
---AutoBuy
-
-local AutoBuy = Window:NewTab("AutoBuy")
-local BuySection = AutoBuy:NewSection("AutoBuys")
-
-
-
-
-
-
-
-
-
 --Extra 
 
 local Extra = Window:NewTab("Extra")
@@ -376,7 +327,7 @@ end)
 --Credits
 
 local Credits = Window:NewTab("Credits")
-local Credit1Section = Credits:NewSection("R 0 T H#0259")
+local Credit1Section = Credits:NewSection("Zroth#0001")
 local Credit2Section = Credits:NewSection("Thanks To Kavo Library For Making This Possible")
 end
 
