@@ -6,6 +6,7 @@ local Rosery = {
     Header = Color3.fromRGB(20, 21, 26),
     TextColor = Color3.fromRGB(255,255,255),
     ElementColor = Color3.fromRGB(60, 60, 60)
+}
 local Window = Library.CreateLib("Rosery                               DA HOOD!  ", Rosery)
 
 --Player
