@@ -1,6 +1,12 @@
 if game.PlaceId == 2788229376 then
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Rosery                               DA HOOD!  ", "Ocean")
+local Rosery = {
+    SchemeColor = Color3.fromRGB(0,200,200),
+    Background = Color3.fromRGB(30, 31, 36),
+    Header = Color3.fromRGB(20, 21, 26),
+    TextColor = Color3.fromRGB(255,255,255),
+    ElementColor = Color3.fromRGB(60, 60, 60)
+local Window = Library.CreateLib("Rosery                               DA HOOD!  ", Rosery)
 
 --Player
 local Player = Window:NewTab("Player")
