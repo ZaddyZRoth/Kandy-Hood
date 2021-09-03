@@ -317,7 +317,7 @@ end)
 local GuiSetting = Window:NewTab("GuiSetting")
 local SettingSection = GuiSetting:NewSection("Setting")
 
-SettingSection:NewKeybind("Customize your gui toggle bind", "KeybindInfo", Enum.KeyCode.RightShift, function()
+SettingSection:NewKeybind("Customize your gui toggle bind", "KeybindInfo", Enum.KeyCode.V, function()
 	Library:ToggleUI()
 end)
 
