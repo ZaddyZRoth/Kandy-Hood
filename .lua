@@ -178,7 +178,7 @@ AutofarmSection:NewToggle("Fist autofarm", "it's literally autofarm wat do yu ex
             end
         end
         
-        print("KANDY HUB AUTOFARM ON")
+        print("Rosery Autofarm ON")
         
         shared.MoneyFarm = true 
         
@@ -264,7 +264,7 @@ AutofarmSection:NewToggle("Fist autofarm", "it's literally autofarm wat do yu ex
             end
         end
         
-        print("KANDY HUB AUTOFARM OFF")
+        print("Rosery Autofarm OFF")
         
         shared.MoneyFarm = false
         
